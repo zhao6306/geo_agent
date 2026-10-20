@@ -19,5 +19,5 @@ for rel in ["whumix/labels/val", "data_v4/annotations/data_v4_val.json",
     p = DATA_ROOT / rel
     print(f"[2/3] {'OK ' if p.exists() else '缺失!'} {rel}")
 
-key = os.getenv("OPENAI_API_KEY", "")
+key = os.getenv("LLM_API_KEY", "")
 print("[3/3] API:", "已配置 key =", key[:6] + "..." if key else "未配置（Lesson 1 前配好即可）")
